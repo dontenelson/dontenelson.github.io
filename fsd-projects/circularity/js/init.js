@@ -94,6 +94,18 @@ var init = function (window) {
     game.update = update;
 
     app.addUpdateable(window.opspark.game);
+
+    if (window.Gamification) {
+      window.Gamification.init({
+        canvas: canvas,
+        view: view,
+        draw: draw,
+        physikz: physikz,
+        circles: circles,
+        game: game,
+      });
+      app.addUpdateable(window.Gamification);
+    }
   };
 };
 
