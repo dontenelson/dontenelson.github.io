@@ -18,7 +18,13 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(118, 0, 233)"); // bottom wall
+    createPlatform(
+      -50,
+      canvas.height - 10,
+      canvas.width + 100,
+      200,
+      "rgb(118, 0, 233)",
+    ); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
@@ -28,27 +34,26 @@ $(function () {
 
     // TODO 1 - Enable the Grid
     // toggleGrid();
-createPlatform(500, 0, 20, 290);
-createPlatform(1350, 400, 50, 50, "red");
 
     // TODO 2 - Create Platforms
-
-createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
-
+    createPlatform(0, 700, 350, 20, "rgb(56, 189, 248)");
+    createPlatform(420, 640, 220, 20, "rgb(46, 204, 113)");
+    createPlatform(300, 520, 180, 20, "rgb(249, 115, 22)");
+    createPlatform(760, 440, 220, 20, "rgb(168, 85, 247)");
+    createPlatform(1040, 360, 200, 20, "rgb(59, 130, 246)");
+    createPlatform(620, 280, 180, 20, "rgb(244, 114, 182)");
+    createPlatform(250, 190, 150, 20, "lime");
 
     // TODO 3 - Create Collectables
+    createCollectable("steve", 150, 660, 0, 0.7);
+    createCollectable("diamond", 500, 600, 0, 0.8);
+    createCollectable("grace", 840, 400, 0, 0.7);
 
-createCollectable("steve", 1350, 50);
-createCollectable("diamond", 200, 170, 0.5, 0.7);
-
-    
     // TODO 4 - Create Cannons
+    createCannon("top", 250, 2000);
+    createCannon("right", 320, 1600);
+    createCannon("left", 500, 1800);
 
-createCannon("top", 200, 100);
-createCannon("right", 300, 2000);
-
-    
-    
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
