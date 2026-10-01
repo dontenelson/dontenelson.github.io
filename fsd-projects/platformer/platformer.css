@@ -7,6 +7,19 @@ body {
   align-items: center;
 }
 
+.portfolio-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 canvas {
   background-color: lightblue;
   margin: 20px;
